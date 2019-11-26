@@ -36,6 +36,6 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish to drop'
   inputs:
-    PathtoPublish: '$(System.DefaultWorkingDirectory)/Neocra.Api/bin/release/**/*.zip'
+    PathtoPublish: '$(build.artifactStagingDirectory)\WebApp.zip'
     ArtifactName: 'drop'
     publishLocation: 'Container'
